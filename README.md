@@ -1,15 +1,10 @@
 # Dashtoon-Assignment
-Initialization:
 
 A loss function (nn.CrossEntropyLoss()) and an optimizer (optim.SGD) are defined.
 The optimizer is set up to update the parameters of a neural network model (vgg19) using stochastic gradient descent (SGD) with momentum.
-Training Loop:
-
 The training loop runs for a specified number of epochs (num_epochs), which defines how many times the entire dataset is passed through the model for training.
 Within each epoch, the model is set to training mode (vgg19.train()).
 The training dataset is iterated through using train_loader, which loads batches of input data (inputs) and corresponding labels (labels).
-Training Iterations:
-
 For each batch of data:
 The model's gradients are zeroed (optimizer.zero_grad()).
 Forward pass: The input data is passed through the model (vgg19(inputs)) to obtain predictions.
